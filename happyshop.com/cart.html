@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <style>
+           nav{
+        width:100%;
+        display:flex;
+        margin:auto;
+        height:80px;
+        justify-content: space-between;
+        background-color:  #0046be;
+    }
+    input{
+  
+        height:30px;
+        width:100%;
+        margin-top:20px;
+    }
+    input:hover{
+        height:28px;
+        margin-top:21px;
+    }
+    #one{
+
+        margin-left:20px;
+    }
+    #one{
+        color:white;
+    }
+    #two{
+    
+        width:40px;
+      margin-top:5px;
+    }
+    #three{
+     
+        width:40%;
+        display:flex;
+       
+        
+    }
+    #avail{
+        width:40px;
+        height:30px;
+        border-radius:100px;
+        margin-left:00px;
+    
+    }
+    #four{
+        margin-top:20px;
+     display:flex;
+  justify-content: space-between;
+        width:20%;
+        border:1px solid red;
+  
+    }
+    #four > div:nth-child(1){
+        border:1px solid red;
+        width:40%;
+   
+    }
+    #four2{
+        border:1px solid red;
+        margin-top:12px;
+        width:40%;
+    
+    }
+    #a1{
+      margin-top:00px;
+        font-size: 20px;
+        color:white;
+     
+    }
+    
+    #cart{
+     width:20px;
+     height:20px;
+     margin-left:00px;
+    }
+    #cart1{
+
+    
+      
+     font-size:25px;   
+     color:white  
+    }
+    #threeone{
+  
+        width:90%;
+    }
+    #threetwo{
+    
+        margin-left:5px;
+    }
+    #searchbtn{
+       
+height:35px;
+margin-top:20px;
+margin-left:00px;
+  
+    }
+ #searchbtn > img{
+  
+    width:20px;
+    height:15px;
+ }
+.container {
+display: inline-block;
+cursor: pointer;
+
+}
+
+.bar1, .bar2, .bar3 {
+width: 30px;
+height: 2px;
+background-color: white;
+margin: 6px 0;
+transition: 0.4s;
+
+}
+
+
+.change .bar1 {
+transform: translate(0, 11px) rotate(-45deg);
+}
+
+
+.change .bar2 {opacity: 0;}
+
+
+.change .bar3 {
+transform: translate(0, -11px) rotate(45deg);}
+
+.dropbtn {
+background-color:#0046be;
+
+
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#nav2{
+margin-top:1px;
+
+height:30px;
+background-color: #0046be;
+display:flex;
+
+}
+
+
+
+.a2{
+color:white;
+padding-top:20px;
+
+}
+#nav21{
+
+width:10%;
+}
+#nav21>p{
+color:white;
+text-align:center;
+margin-top:9px;
+}
+#nav22{
+margin-left:50px;
+margin-top:10px;
+
+width:60%;
+display:flex;
+justify-content: space-between;
+}
+#nav23{
+
+width:40%;
+display:flex;
+margin-left:170px;
+margin-top:10px;
+justify-content: space-between;
+}
+        #cart{
+     flex-direction: column;
+     margin-left:500px;
+      margin-top:40px;
+       width:30%;
+        }
+    .feature{
+        width:100%;
+        height:150px;
+        margin-top:80px;
+      
+        
+    }
+    .rating{
+        width:20%;
+        height:40px;  
+    }
+    .dropbtn{
+        color:white;
+        font-size:30px;
+        margin-top:00px;
+        border-radius:100%;}
+
+        /* Availability */
+.availbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.availbtn {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.availbtn{
+    color:white;
+    background-color: #0046be;
+}
+#availdiv{
+ 
+    width:100%;
+    text-align:center;
+    background-color:#ddd
+}
+#availp{
+    text-align:center;
+    color:rgb(194, 131, 112)
+}
+#four2a{
+    color:white;
+  
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="one">
+            <h1>HappyShop.com</h1>
+        </div>
+        <div id="two">
+            <!-- <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div> -->
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Deals</a>
+                    <a href="#">Support & Services</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Brands</a>
+                    <a href="#">Brands</a>
+                    <a href="#">Brands</a>
+                </div>
+              </div>
+      
+        
+    
+        </div>
+        <div id="three">
+            <div id="threeone">
+            <input type="text" placeholder="Search Best Buy"/></div>
+          <div id="threetwo"> <button id="searchbtn"><img src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"/></button></div>
+       </div><div id="four">
+    <div id="four1">
+        <!-- *availability -->
+        <div class="availability">
+            <button onclick="myFunction1()" class="availbtn">Availability</button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <p id="availp">Availability<p>
+                <div id="availdiv">
+          
+            <p>From:Monday-Saturday</p>
+            <p>Time:9:00Am to 6:00Pm</p>
+        </div>
+            </div>
+         
+
+
+         </div> 
+
+
+         
+    </div>
+    <div id="four2">
+        <a id=four2a href="/happyshop.com/cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a>
+
+    </div>     
+           
+        </div>
+      </nav>
+      <div id="nav2">
+        <div id="nav21">
+          <p>Holiday Deals</p>
+        </div>
+        <div id="nav22">
+        <div>
+        
+            <a class ="a2" href="/happyshop.com/topdeals.html">Top Deal</a>
+        </div>
+        <div>
+            <a class ="a2"  href="/happyshop.com/dealoftheday.html">Deal of the Day</a>   
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/totaltech.html">totaltech Membership</a>  
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/creditcards.html">Credit Cards</a>  
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/giftcards.html">Gift Cards</a>  
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/more.html">More ></a>  
+        </div></div>
+        <div id="nav23">
+        <div>
+            <a class ="a2" href="/happyshop.com/accounts.html">Account</a>  
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/recently.html">Recently Viewed</a>  
+        </div>
+        <div>
+            <a class ="a2" href="/happyshop.com/orderstatus.html">Order Status</a>  
+        </div>
+       
+        <div>
+            <a class ="a2" href="/happyshop.com/saved.html">Saved Items</a>     
+        </div></div>
+      </div>
+</body>
+</html>
+<script>
+    // *menu
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// *availbility
+let mydropdown1=document.getElementById("myDropdown1");
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event1) {
+  if (!event1.target.matches('.availbtn')) {
+    var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns1.length; i++) {
+      var openDropdown1 = dropdowns1[i];
+      if (openDropdown1.classList.contains('show')) {
+        openDropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+    let maincart=document.getElementById("cart");
+    let cart1=JSON.parse(localStorage.getItem("cartitem"))||[];
+    displayproducts(cart1)
+function displayproducts(data){
+   data.forEach((element,index)=>{
+        console.log(element)
+        let child=document.createElement("div");
+        let featuredimg=document.createElement("img");
+        featuredimg.setAttribute("src",element.image);
+        featuredimg.setAttribute("class","feature")
+        let name=document.createElement("p");
+        name.innerText=element.name;
+        let rating=document.createElement("img");
+        rating.setAttribute("src",element.star);
+      rating.setAttribute("class","rating")
+        let price=document.createElement("p");
+        price.setAttribute("class",price)
+        price.innerText="$"+element.price
+        // let Addtocart=document.createElement("button");
+        // Addtocart.setAttribute("class","Add")
+        // Addtocart.innerText="Add To Cart"
+
+
+       
+
+    
+        child.append(featuredimg,name,rating,price)
+     maincart.append(child);
+   })
+    
+}
+</script>

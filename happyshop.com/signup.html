@@ -29,7 +29,7 @@
         #logoflex{
           display:grid;
           grid-template-columns: repeat(2,80px);
-          border:1px solid red;
+        
           margin-left:70px;
         }
         #mainlogo{
@@ -46,10 +46,11 @@
         #input{
         
 
+
 width:22%;
 margin:auto;
-height:400px;
-margin-top:150px;
+height:500px;
+margin-top:50px;
 
 
         }
@@ -59,6 +60,26 @@ margin-top:150px;
           height:30px;
         }
         #inputchild2{
+          margin-top:20px;
+          width:100%;
+          height:30px;
+        }
+        #inputchild3{
+          margin-top:20px;
+          width:100%;
+          height:30px;
+        }
+        #inputchild4{
+          margin-top:20px;
+          width:100%;
+          height:30px;
+        }
+        #inputchild5{
+          margin-top:20px;
+          width:100%;
+          height:30px;
+        }
+        #inputchild6{
           margin-top:20px;
           width:100%;
           height:30px;
@@ -82,6 +103,9 @@ margin-top:150px;
         p{
           text-align: center;
         }
+        #input{
+            
+        }
     </style>
 </head>
 <body>
@@ -94,14 +118,39 @@ margin-top:150px;
    </nav>
 <div id="input">
   <h3>Sign in to HappyShop</h3>
-  <form>
-    <input id ="inputchild1" type="email" placeholder="Please Enter Your Email Address"/>
-   <input id="inputchild2" type="password" placeholder="Please Enter Your Password"/>
-   <button>Sign In</button>
+  <form id="form">
+    <input id ="inputchild1" type="text" placeholder="First Name"/>
+    <input id ="inputchild2" type="text" placeholder="Last Name"/>
+    <input id ="inputchild3" type="email" placeholder="Please Enter Your Email Address"/>
+    <input id="inputchild4" type="password" placeholder="Please Enter Your Password"/>
+    <input id="inputchild5" type="password" placeholder="Please Confirm Your Password"/>
+    <input id ="inputchild6" type="text" placeholder="Mobile Phone no."/>
+   
+
+   
+  
+   <button id="Createaccount">Create an account</button>
    <p>or</p>
-   <p>Don't have a account? <a  id="signup" href="/happyshop.com/signup.html">create a account here..</a></p>
+   <p>already have a account? <a  id="signup" href="/happyshop.com/login.html">Sign in</a></p>
   </form>
 </div>
-  
+
+
+    
 </body>
 </html>
+<script>
+    let createbtn=document.getElementById("Createaccount");
+    let form=document.getElementById("form");
+    createbtn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        let obj={
+            firstname:document.getElementById("inputchild1").value,
+            lastname:form.inputchild2.value
+
+
+            
+        }
+        console.log(obj)
+    })
+</script>
