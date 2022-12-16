@@ -9,7 +9,7 @@
         nav{
       display:flex;
           
-          border:1px solid red;
+        
           background-color:blue;
           height: 70px;
         }
@@ -29,7 +29,7 @@
         #logoflex{
           display:grid;
           grid-template-columns: repeat(2,80px);
-          border:1px solid red;
+        
           margin-left:70px;
         }
         #mainlogo{
@@ -53,12 +53,22 @@ margin-top:150px;
 
 
         }
-        #inputchild1{
+       #heading{
+          background-color:red;
+          color:white;
+      margin-left:60px;
+      margin-top:2000px;
+        }
+        #span{
+          margin-top:50px;
+        }
+   
+        #email{
           margin-top:20px;
           width:100%;
           height:30px;
         }
-        #inputchild2{
+        #password{
           margin-top:20px;
           width:100%;
           height:30px;
@@ -86,22 +96,63 @@ margin-top:150px;
 </head>
 <body>
    <nav>
-<div id="logoflex"> <div id="logoflexchild1"><a id="a1" href="/happyshop.com/English.html"><img id="one" src="/happyshop.com/New folder/Picsart_22-12-13_12-51-16-249-removebg-preview (1).png"/></a></div>
-<div id="logoflexchild2"><a id ="mainlogo" href="/happyshop.com/English.html">HappyShop.com</a></div>
+<div id="logoflex"> <div id="logoflexchild1"><a id="a1" href="English.html"><img id="one" src="/happyshop.com/New folder/Picsart_22-12-13_12-51-16-249-removebg-preview (1).png"/></a></div>
+<div id="logoflexchild2"><a id ="mainlogo" href="English.html">HappyShop.com</a></div>
 
 </div>
-<div id="return"><a id ="return1" href="/happyshop.com/English.html">return to the page</a></div>
+<div id="return"><a id ="return1" href="English.html">return to the page</a></div>
    </nav>
+   <form>
+   <div id="container"></div>
+ 
 <div id="input">
   <h3>Sign in to HappyShop</h3>
-  <form>
-    <input id ="inputchild1" type="email" placeholder="Please Enter Your Email Address"/>
-   <input id="inputchild2" type="password" placeholder="Please Enter Your Password"/>
-   <button>Sign In</button>
+  <div id="span"><span id="heading"></span></div>
+    <input type="email" id="email" />
+    <input type="password" id="password" />
+    <button id="button">SignIn</button>
+  </form>
    <p>or</p>
-   <p>Don't have a account? <a  id="signup" href="/happyshop.com/signup.html">create a account here..</a></p>
+   <p>Don't have a account? <a  id="signup" href="signup.html">create a account here..</a></p>
   </form>
 </div>
   
 </body>
 </html>
+<script>
+let btn=document.getElementById("button")
+ let form=document.querySelector("form");
+    let heading=document.getElementById("heading");
+    var signin=JSON.parse(localStorage.getItem("userdetails"))
+    
+    signin.forEach((element,index)=>{
+heading.innerText="";
+      btn.addEventListener("click",(event)=>{
+    event.preventDefault();
+
+
+let password=element.pass;
+console.log(password)
+let email=element.email;
+console.log(email)
+
+ 
+ 
+
+if(form.password.value==password && form.email.value==email)
+    {heading.innerText=("Sign in Successful")}
+    else if(form.password.value=="" || form.email.value==""){
+      heading.innerText="Please Enter your details"
+    }
+else if(form.email.value!==email || form.password!==password){heading.innerText=("wrong credentials")}
+    
+  
+  });
+    
+    })
+    ;
+
+
+
+  
+</script>
