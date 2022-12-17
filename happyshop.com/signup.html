@@ -8,8 +8,7 @@
     <style>
         nav{
       display:flex;
-          
-          border:1px solid red;
+        
           background-color:blue;
           height: 70px;
         }
@@ -110,15 +109,15 @@ margin-top:50px;
 </head>
 <body>
    <nav>
-<div id="logoflex"> <div id="logoflexchild1"><a id="a1" href="/happyshop.com/English.html"><img id="one" src="/happyshop.com/New folder/Picsart_22-12-13_12-51-16-249-removebg-preview (1).png"/></a></div>
-<div id="logoflexchild2"><a id ="mainlogo" href="/happyshop.com/English.html">HappyShop.com</a></div>
+<div id="logoflex"> <div id="logoflexchild1"><a id="a1" href="English.html"><img id="one" src="/happyshop.com/New folder/Picsart_22-12-13_12-51-16-249-removebg-preview (1).png"/></a></div>
+<div id="logoflexchild2"><a id ="mainlogo" href="English.html">HappyShop.com</a></div>
 
 </div>
-<div id="return"><a id ="return1" href="/happyshop.com/English.html">return to the page</a></div>
+<div id="return"><a id ="return1" href="English.html">return to the page</a></div>
    </nav>
 <div id="input">
   <h3>Sign in to HappyShop</h3>
-  <form id="form">
+  <form >
     <input id ="inputchild1" type="text" placeholder="First Name"/>
     <input id ="inputchild2" type="text" placeholder="Last Name"/>
     <input id ="inputchild3" type="email" placeholder="Please Enter Your Email Address"/>
@@ -129,9 +128,9 @@ margin-top:50px;
 
    
   
-   <button id="Createaccount">Create an account</button>
+   <input type="submit" id="submit">
    <p>or</p>
-   <p>already have a account? <a  id="signup" href="/happyshop.com/login.html">Sign in</a></p>
+   <p>already have a account? <a  id="signup" href="login.html">Sign in</a></p>
   </form>
 </div>
 
@@ -140,17 +139,73 @@ margin-top:50px;
 </body>
 </html>
 <script>
+  let form=document.querySelector("form");
+   let userdata=JSON.parse(localStorage.getItem("userdetails"))||[];
+   console.log(userdata)
     let createbtn=document.getElementById("Createaccount");
-    let form=document.getElementById("form");
-    createbtn.addEventListener("click",(e)=>{
+   
+    form.addEventListener("submit",(e)=>{
         e.preventDefault();
         let obj={
             firstname:document.getElementById("inputchild1").value,
-            lastname:form.inputchild2.value
+            lastname:form.inputchild2.value,
+            email:form.inputchild3.value,
+            pass:form.inputchild4.value,
+            confirm:form.inputchild5.value,
+            mobile:form.inputchild6.value
 
 
             
         }
-        console.log(obj)
-    })
+        let count=0;
+    
+        if(obj.firstname==""){
+            alert("Please Enter Your First Name")
+        }
+    else if(obj.lastname==""){
+            alert("Please Enter Your Last Name") 
+        }
+        else if(obj.email==""){
+            alert("Please Enter Your Email") 
+        }
+        else if(obj.pass==""){
+            alert("Please Enter Your password") 
+        }
+        else if(obj.confirm==""){
+            alert("Please confirm your password") 
+        }
+        else if(obj.pass!==obj.confirm){
+            alert("please match the password and confirm password")
+        }
+        else if(obj.mobile==""){
+            alert("Please Enter Your mobile number") 
+            console.log(obj.mobile)
+        }
+        else if(obj.email.includes("@")==false)
+        {
+            alert("your email must consist a suffix :@gmail.com")
+        }
+       
+        else if(obj.email.includes(".com")==false){
+            alert("your email must consist a suffix: @gmail.com")}
+
+        else if(isNaN(obj.mobile)==true){
+            alert("Plese Enter Your mobile no.")
+        }
+        
+      
+
+   
+      
+        
+            if(obj.firstname!=="" && obj.lastname!==""&& obj.email!==""&& obj.pass!==""
+            && obj.confirm!=="" && obj.mobile!=="" && obj.pass==obj.confirm && obj.email.includes("@")==true
+           &&obj.email.includes("@gmail.com")==true && obj.email.includes(".com")==true && isNaN(obj.mobile)==false ){
+                userdata.push(obj)
+                localStorage.setItem("userdetails",JSON.stringify(userdata));
+                alert("Account created Successfully")
+            }
+     
+          })
+        
 </script>
