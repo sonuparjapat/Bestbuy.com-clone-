@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <style>
+        /* navpositionfixed part */
+         #navdiv{
+    position: fixed;
+ top:1px;
+ width:99%;
+
+
+ }
+ nav{
+     width:100%;
+     display:flex;
+     margin:auto;
+     height:80px;
+     justify-content: space-between;
+     background-color:  #0046be;
+ }
+ input{
+
+     height:30px;
+     width:100%;
+     margin-top:20px;
+ }
+ input:hover{
+     height:28px;
+     margin-top:21px;
+ }
+ #one{
+
+     margin-left:20px;
+ }
+ #one{
+     color:white;
+ }
+ #two{
+ 
+     width:40px;
+   margin-top:5px;
+ }
+ #three{
+  
+     width:40%;
+     display:flex;
+    
+     
+ }
+ #avail{
+     width:40px;
+     height:30px;
+     border-radius:100px;
+     margin-left:00px;
+ 
+ }
+
+ /* *availibility and cart part */
+ #four{
+     margin-top:20px;
+  display:flex;
+justify-content: space-between;
+     width:20%;
+   
+
+ }
+ #four > div:nth-child(1){
+   
+     width:40%;
+
+ }
+ #four2{
+  
+     margin-top:12px;
+     width:40%;
+ 
+ }
+ #a1{
+   margin-top:00px;
+     font-size: 20px;
+     color:white;
+  
+ }
+ 
+ #cart{
+  width:20px;
+  height:20px;
+  margin-left:00px;
+ }
+ #cart1{
+
+ 
+   
+  font-size:25px;   
+  color:white  
+ }
+ #threeone{
+
+     width:90%;
+ }
+ #threetwo{
+ 
+     margin-left:5px;
+ }
+ #searchbtn{
+    
+height:35px;
+margin-top:20px;
+margin-left:00px;
+
+ }
+#searchbtn > img{
+
+ width:20px;
+ height:15px;
+}
+.container {
+display: inline-block;
+cursor: pointer;
+
+}
+
+
+.dropbtn {
+background-color:#0046be;
+
+
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#nav2{
+margin-top:83px;
+
+height:30px;
+background-color: #0046be;
+display:flex;
+
+}
+
+
+
+.a2{
+color:white;
+padding-top:20px;
+
+}
+#nav21{
+
+width:10%;
+}
+#nav21>p{
+color:white;
+text-align:center;
+margin-top:9px;
+}
+#nav22{
+margin-left:50px;
+margin-top:10px;
+
+width:60%;
+display:flex;
+justify-content: space-between;
+}
+#nav23{
+
+width:40%;
+display:flex;
+margin-left:170px;
+margin-top:10px;
+justify-content: space-between;
+}
+     #cart{
+  flex-direction: column;
+  margin-left:500px;
+   margin-top:40px;
+    width:30%;
+     }
+ .feature{
+     width:100%;
+     height:150px;
+     margin-top:80px;
+   
+     
+ }
+ .rating{
+     width:20%;
+     height:40px;  
+ }
+ .dropbtn{
+     color:white;
+     font-size:30px;
+     margin-top:00px;
+     border-radius:100%;}
+
+     /* Availability */
+.availbtn {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.availbtn {
+position: relative;
+display: inline-block;
+}
+.holidaybtn{
+    background-color: #0046be;
+    border:00px;
+    color:white;
+    margin-top:10px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.availbtn{
+ color:white;
+ background-color: #0046be;
+}
+#availdiv{
+
+ width:100%;
+ text-align:center;
+ background-color:#ddd
+}
+#availp{
+ text-align:center;
+ color:rgb(194, 131, 112)
+}
+#four2a{
+ color:white;
+
+}
+
+/* *scrollingpart */
+.scrolldiv{
+    background: white;
+   width:100%;
+ margin-left:35px;
+
+
+}
+.insidescrolldiv{
+
+    height:400px;
+    overflow: hidden;
+    overflow-y: scroll;
+ background:white;
+    border:1px solid rgb(206, 200, 200);
+}
+.content{
+
+}
+#price1,#price2,#price3,#price4,#price5,#price6,#price7,#price8{
+ width:14px;
+
+}
+.checkbox1{
+    
+}
+#mainproductdiv{
+    
+    border:1px solid red;
+  width:25%;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navdiv">
+        <nav>
+            <div id="one">
+                <a style="color:white;" href="english.html"><h1>HappyShop.com</h1></a>
+            </div>
+            <div id="two">
+                <!-- <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div> -->
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="laptop&comp.html">Deals</a>
+                        <a href="laptop&comp.html">Support & Services</a>
+                        <a href="laptop&comp.html">Featured</a>
+                        <a href="laptop&comp.html">Brands</a>
+                        <a href="laptop&comp.html">Brands</a>
+                        <a href="laptop&comp.html">Brands</a>
+                    </div>
+                  </div>
+          
+            
+        
+            </div>
+            <div id="three">
+                <div id="threeone">
+                <input type="text" placeholder="Search Best Buy"/></div>
+              <div id="threetwo"> <button id="searchbtn"><img src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"/></button></div>
+           </div><div id="four">
+        <div id="four1">
+            <!-- *availability -->
+            <div class="availability">
+                <button onclick="myFunction1()" class="availbtn">Availability</button>
+                <div id="myDropdown1" class="dropdown-content1">
+                    <p id="availp">Availability<p>
+                    <div id="availdiv">
+              
+                <p>From:Monday-Saturday</p>
+                <p>Time:9:00Am to 6:00Pm</p>
+            </div>
+                </div>
+             
+    
+    
+             </div> 
+    
+    
+             
+        </div>
+        <div id="four2">
+            <a id=four2a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a>
+    
+        </div>     
+               
+            </div>
+          </nav></div>
+          <div id="nav2">
+            <!-- holidaydealspart -->
+            <div id="nav21">
+                <div class="holidaydeals">
+                    <button onclick="myFunction2()" class="holidaybtn">Holidaydeals</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="laptop&comp.html">Holiday deals right now</a>
+                        <a href="laptop&comp.html">Gift ideas</a>
+                        <a href="laptop&comp.html">Gift cards</a>
+                        <a href="laptop&comp.html">Toy guide 2022</a>
+                        <a href="laptop&comp.html">Explore holiday inspiration</a>
+                        <a href="laptop&comp.html">Holiday FAQ's</a>
+                  
+                    
+              
+                    </div>
+                 
+        
+        
+                 </div> 
+                       
+                 
+               
+            </div>
+            <div id="nav22">
+            <div>
+            
+                <a class ="a2" href="topdeals.html">Top Deal</a>
+            </div>
+            <div>
+                <a class ="a2"  href="dealoftheday.html">Deal of the Day</a>   
+            </div>
+            <div>
+                <a class ="a2" href="totaltech.html">totaltech Membership</a>  
+            </div>
+            <div>
+                <a class ="a2" href="creditcards.html">Credit Cards</a>  
+            </div>
+            <div>
+                <a class ="a2" href="giftcards.html">Gift Cards</a>  
+            </div>
+            <div>
+                <a class ="a2" href="more.html">More ></a>  
+            </div></div>
+            <div id="nav23">
+            <div>
+                <a class ="a2" href="accounts.html">Account</a>  
+            </div>
+            <div>
+                <a class ="a2" href="recently.html">Recently Viewed</a>  
+            </div>
+            <div>
+                <a class ="a2" href="orderstatus.html">Order Status</a>  
+            </div>
+           
+            <div>
+                <a class ="a2" href="saved.html">Saved Items</a>     
+            </div></div>
+          </div>
+          <div id="searchproduct"></div>
+          <div style="border:1px solid rgb(226, 222, 222);margin-top:40px;"></div>
+          <div style="width:20%;margin-left:35px;"><a href="english.html">HappyShop</a>
+        All Categories</div>
+        <h3 style="margin-left:35px;">Laptop & Computer deals</h3>
+        <div id="mainproductdiv" >
+<div class="scrolldiv">
+    <div class="insidescrolldiv">
+    <div class="content">
+        <h2 style="margin-left:35px;">Category</h2>
+ <select id="category" style="margin-left:35px;">
+<option value="">Select Category</option>
+<option value="Pc Laptops">Pc Laptops</option>
+<option value="Mackbook">Mackbook</option>
+<option value="Chrombooks">Chrombooks</option>
+<option value="Microsoft Surface Go">Microsoft Surface Go</option>
+ </select>
+ <div style="border:1px solid rgb(226, 222, 222);margin-top:60px;"></div> 
+
+ <form>
+    <input id="priceinput" type="number" placeholder="min" style="width:90px;border-radius:7px;text-align:center;margin-left:35px;"/> <span>to</span>
+    <input id="priceinput" type="number" placeholder="max" style="width:90px;border-radius:7px;text-align:center"/>
+    </form>
+    <div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price1"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">75$-99$</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price2"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$100 - $149.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price3"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox4">$150 - $199.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price5"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$200 - $249.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price6"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$250 - $499.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price7"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$500 - $749.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price8"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$750 - $999.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price9"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$1000 - $1249.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price9"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$1000 - $1249.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price10"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$1250 - $1499.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price11"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$1500 - $1999.99</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="price12"  name="vehicle1" value="Bike"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$2000 - $2499.99</p></div>
+</div>
+
+<div style="border:1px solid rgb(201, 197, 197)"></div>
+
+ <h3 style="margin-left:30px;">Brand</h3>
+ <input id="search" placeholder="Search your product" style="width:70%;margin-left:30px;"/>
+ <div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="brand1"  name="vehicle1" value="Microsoft"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Microsoft</p></div>
+</div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand2"  name="vehicle1" value="Apple"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Apple</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand3"  name="vehicle1" value="Asus"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Asus</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand4"  name="vehicle1" value="Lenova"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Lenova</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand5"  name="vehicle1" value="Hp"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Hp</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand6"  name="vehicle1" value="Bike"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Accer</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand7"  name="vehicle1" value="Accer"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Samsung</p></div>
+    </div>
+    <div style="display:flex;margin-top:00px;">
+        <div style="margin-left:30px;"><input type="checkbox" id="brand8"  name="vehicle1" value="Dell"/></div>
+        <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Dell</p></div>
+    </div>
+    <div style="border:1px solid rgb(211, 208, 208);"></div>
+</div>
+<h3 style="margin-left:30px;">Features</h3>
+</form>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="features1"  name="features1" value="Front Facing Camera"></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Front Facing Camera</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="features2"  name="features2" value="Headphone Jack"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Headphone Jack</p></div>
+</div>  
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="features3"  name="features3" value="Energystar Certified"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Energystar Certified</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="features4"  name="features4" value="Backlit-keyboard"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Backlit-keyboard</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="features5"  name="features5" value="Touch Screen"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Touch Screen</p></div>
+</div>
+<div style="border:1px solid rgb(207, 202, 202);"></div>
+<h3 style="margin-left:30px;">Color</h3>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color1"  name="vehicle1" value="silver"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">silver</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color2"  name="vehicle1" value="Black"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Black</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color3"  name="vehicle1" value="Gray"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Gray</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color4"  name="vehicle1" value="Blue"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Blue</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color5"  name="vehicle1" value="Green"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Green</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="color6"  name="vehicle1" value="Gold"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Gold</p></div>
+</div>
+<div style="border:1px solid rgb(199, 194, 194)">
+</div>
+<h3 style="margin-left:30px">Processor</h3>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor1"  name="vehicle1" value="Intel Celeron"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Intel Celeron</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor2"  name="vehicle1" value="Intel Core i3"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Intel Core i3</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor3"  name="vehicle1" value="Intel Core i5"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Intel Core i5</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor4"  name="vehicle1" value="Intel Core i7"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Intel Core i7</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor5"  name="vehicle1" value="Intel Core i9"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Intel Core i9</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor6"  name="vehicle1" value="AMD Ryzen 3"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">AMD Ryzen 3</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor7"  name="vehicle1" value="AMD Ryzen 5"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="processor1">AMD Ryzen 5</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor8"  name="vehicle1" value="AMD Ryzen 7"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">AMD Ryzen 7</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor9"  name="vehicle1" value="AMD Ryzen 9"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">AMD Ryzen 9</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor10"  name="vehicle1" value="Apple M1"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Apple M1</p></div>
+</div>
+<div style="display:flex;margin-top:00px;">
+    <div style="margin-left:30px;"><input type="checkbox" id="processor11"  name="vehicle1" value="Apple M1 Pro"/></div>
+    <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">Apple M1 Pro</p></div>
+</div>
+
+
+</div>
+   
+<div id=productdiv style="border:1px solid red;height:400px;margin-left:400px;">
+
+</div>
+
+        </div>
+        
+</body>
+</html>
+<script>
+     function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+// holidaydeals partdropdown
+let mydropdown2=document.getElementById("myDropdown2");
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event2) {
+  if (!event2.target.matches('.holidaybtn')) {
+    var dropdowns2 = document.getElementsByClassName("dropdown-content");
+    var j;
+    for (j = 0; j < dropdowns2.length; j++) {
+      var openDropdown2 = dropdowns2[j];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
+      }
+    }
+  }
+}
+
+// *availbility
+let mydropdown1=document.getElementById("myDropdown1");
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event1) {
+  if (!event1.target.matches('.availbtn')) {
+    var dropdowns1 = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns1.length; i++) {
+      var openDropdown1 = dropdowns1[i];
+      if (openDropdown1.classList.contains('show')) {
+        openDropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

@@ -51,21 +51,23 @@
      margin-left:00px;
  
  }
+
+ /* *availibility and cart part */
  #four{
      margin-top:20px;
   display:flex;
 justify-content: space-between;
      width:20%;
-     border:1px solid red;
+   
 
  }
  #four > div:nth-child(1){
-     border:1px solid red;
+   
      width:40%;
 
  }
  #four2{
-     border:1px solid red;
+  
      margin-top:12px;
      width:40%;
  
@@ -115,26 +117,6 @@ cursor: pointer;
 
 }
 
-.bar1, .bar2, .bar3 {
-width: 30px;
-height: 2px;
-background-color: white;
-margin: 6px 0;
-transition: 0.4s;
-
-}
-
-
-.change .bar1 {
-transform: translate(0, 11px) rotate(-45deg);
-}
-
-
-.change .bar2 {opacity: 0;}
-
-
-.change .bar3 {
-transform: translate(0, -11px) rotate(45deg);}
 
 .dropbtn {
 background-color:#0046be;
@@ -264,7 +246,12 @@ cursor: pointer;
 position: relative;
 display: inline-block;
 }
-
+.holidaybtn{
+    background-color: #0046be;
+    border:00px;
+    color:white;
+    margin-top:10px;
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content1 {
 display: none;
@@ -331,6 +318,7 @@ display: block;
     font-size:30px;
     margin-top:00px;
 }
+/* *greatddeals part */
 #div31{
     width:70%;
 
@@ -345,8 +333,8 @@ display: block;
    row-gap: 150px;
 }
  .img{
-    width:100%;
-    height:100px;
+    width:89%;
+
     height:130px;
     border-radius:50%;
     border:2px solid white;
@@ -354,24 +342,24 @@ display: block;
 
 }
 #div31 > div{
-    
+    width:100%;
     height:150px;
+ 
 }
-.body {
+#div31 a {
     color:white;
-   margin-left:28px;
+    font-size:15px;
+
+ width:20%;
+
 }
-.body1{
-    color:white;
+.body4{
+    margin-left:40px;
 }
-.body2{
-    color:white;
-    margin-left:15px;
-}
-.body3{
-    color:white;
-    margin-left:45px;
-}
+
+
+
+ /* work after great deals */
 #banner{
 
     margin-top:90px;
@@ -596,23 +584,18 @@ margin-top:230px;
     <div id="navdiv">
     <nav>
         <div id="one">
-            <h1>HappyShop.com</h1>
+            <a style="color:white;" href="english.html"><h1>HappyShop.com</h1></a>
         </div>
         <div id="two">
-            <!-- <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div> -->
               <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Deals</a>
-                    <a href="#">Support & Services</a>
-                    <a href="#">Featured</a>
-                    <a href="#">Brands</a>
-                    <a href="#">Brands</a>
-                    <a href="#">Brands</a>
+                    <a href="laptop&comp.html">Deals</a>
+                    <a href="laptop&comp.html">Support & Services</a>
+                    <a href="laptop&comp.html">Featured</a>
+                    <a href="laptop&comp.html">Brands</a>
+                    <a href="laptop&comp.html">Brands</a>
+                    <a href="laptop&comp.html">Brands</a>
                 </div>
               </div>
       
@@ -652,8 +635,28 @@ margin-top:230px;
         </div>
       </nav></div>
       <div id="nav2">
+        <!-- holidaydealspart -->
         <div id="nav21">
-          <p>Holiday Deals</p>
+            <div class="holidaydeals">
+                <button onclick="myFunction2()" class="holidaybtn">Holidaydeals</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="laptop&comp.html">Holiday deals right now</a>
+                    <a href="laptop&comp.html">Gift ideas</a>
+                    <a href="laptop&comp.html">Gift cards</a>
+                    <a href="laptop&comp.html">Toy guide 2022</a>
+                    <a href="laptop&comp.html">Explore holiday inspiration</a>
+                    <a href="laptop&comp.html">Holiday FAQ's</a>
+              
+                
+          
+                </div>
+             
+    
+    
+             </div> 
+                   
+             
+           
         </div>
         <div id="nav22">
         <div>
@@ -661,7 +664,7 @@ margin-top:230px;
             <a class ="a2" href="topdeals.html">Top Deal</a>
         </div>
         <div>
-            <a class ="a2"  href="/dealoftheday.html">Deal of the Day</a>   
+            <a class ="a2"  href="dealoftheday.html">Deal of the Day</a>   
         </div>
         <div>
             <a class ="a2" href="totaltech.html">totaltech Membership</a>  
@@ -690,36 +693,57 @@ margin-top:230px;
             <a class ="a2" href="saved.html">Saved Items</a>     
         </div></div>
       </div>
+      <div id="searchproduct"></div>
   <div id="div3">
 <div id="div3text"><h1>Great Deals</h1><p>All in one place.</p></div>
 <div id="div31">
 
-    <div><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6502179-MMT-569003-0808-ec85fc42-4049-476f-ad8a-ad9e94e5607b.jpg;maxWidth=220" alt=""/>
-   <a class= "body1" href="laptop&comp.html">Laptop & Computers</a>
+    <div>   <a  class= "body1" href="laptop&comp.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6502179-MMT-569003-0808-ec85fc42-4049-476f-ad8a-ad9e94e5607b.jpg;maxWidth=220" alt=""/>
+</a>
+<a class= "body2" href="laptop&comp.html">Laptop & Computers</a>
     </div>
-    <div>   <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502215_sd.jpg;maxWidth=220" alt=""/>
-        <a class= "body1" href="tv.html">Tvs & Projectors</a>
+    <div>    <a class= "body1" href="tv.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502215_sd.jpg;maxWidth=220" alt=""/>
+     </a>
+   <a style="margin-left:10px;" href="tv.html"> Tvs & Projectors</a>
     </div>
-    <div>  <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-apple-d28633c9-bbe5-4f83-a0f6-55b738306ae1.jpg;maxWidth=220" alt=""/>
-        <a class= "body3" href="apple.html">Apple</a>   </div> 
-        <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6456/6456332_sd.jpg;maxWidth=220" alt=""/>
-            <a class= "body" href="video.html">Video Games</a> </div>   <div>  <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519950_sd.jpg;maxWidth=220" alt=""/> 
-                <a class= "body" href="cellphone.html">Cell Phones</a></div>  
-      <div>  <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-606895-ghp-img-icons-mappls-2157cc1d-a86a-48d0-98a3-15110ca655c7.jpg;maxWidth=220" alt=""/>
-        <a class= "body2" href="major.html">Major appliances</a> </div>          <div>  <img  class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505727_sd.jpg;maxWidth=220" alt=""/>
-            <a class= "body" href="headphone.html">headphone</a>  </div>            <div>  <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500695_rd.jpg;maxWidth=220" alt=""/>
-                <a class= "body" href="pcgaming.html">Pc gaming</a></div>               <div><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-623320-ghp-img-icons-tablets-309e6e1b-379c-438d-b57c-7e6450a91e6e.jpg;maxWidth=220" alt=""/>
-                    <a class= "body" href="tablet.html">tablets</a> </div>                  
-                     <div><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxWidth=220" alt=""/>
-                        <a class= "body" href="camera.html">cameras</a> </div>                      <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-toys-dbd5f58e-beb9-4ca2-8d48-3db5e29c5e63.jpg;maxWidth=220" alt=""/>
-                            <a class= "body3" href="soundbar.html">Toys</a>  </div>                          <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6454/6454256_sd.jpg;maxWidth=220" alt=""/>
-                                <a class= "body" href="watch.html">Soundbars</a>  </div>                                  <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510885_sd.jpg;maxWidth=220" alt=""/>
-                                    <a class= "body1" href="smallapp.html">wearable technology</a>  </div>                                    <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-smappls-bfa220bd-fca3-447c-ab2e-3c88aaebea36.jpg;maxWidth=220" alt=""/>
-                                        <a class= "body" href="printer.html">small appliances</a> </div>                                         <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-615940-ghp-img-icons-printers-293d1aa1-6487-4489-8c17-f4bdc2f57b56.jpg;maxWidth=220" alt=""/>
-                                            <a class= "body" href="phone.html">printers</a> </div>                                              <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461319_sd.jpg;maxWidth=220" alt=""/>
-                                                <a class= "body3" href="toys.html">phone</a> </div>                                                 <div> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502458_sd.jpg;maxWidth=220" alt=""/>
-                                                    <a class= "body" href="electri.html">electric cycles</a> </div>                                                      <div>  <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-health-1c7229b6-26c8-44a1-94ea-62315c8c6a4b.jpg;maxWidth=220" alt=""/>
-                                                        <a class= "body2" href="health.html">health equipment</a></div> 
+    <div>  
+          <a class= "body3" href="apple.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-apple-d28633c9-bbe5-4f83-a0f6-55b738306ae1.jpg;maxWidth=220" alt=""/>
+      </a> 
+    <a style="margin-left:40px;" href="apple.html" >Apple</a>  </div> 
+
+
+        <div>    <a class= "body" href="video.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6456/6456332_sd.jpg;maxWidth=220" alt=""/>
+       </a><a href="video.html" style="margin-left:20px;">  Video Games</a> </div>  
+          <div>   <a class= "body" href="cellphone.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519950_sd.jpg;maxWidth=220" alt=""/> 
+              </a><a href="cellphone.html" style="margin-left:20px;"> Cell Phones</a></div>  
+      <div>  <a class= "body2" href="major.html"> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-606895-ghp-img-icons-mappls-2157cc1d-a86a-48d0-98a3-15110ca655c7.jpg;maxWidth=220" alt=""/>
+      </a> <a style="margin-left:15px;"> Major appliances</a></div>     
+           <div>  <a class= "body" href="headphone.html"> <img  class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505727_sd.jpg;maxWidth=220" alt=""/>
+          </a> <a style="margin-left:25px;" href="headphone.html"> headphone</a> </div>            
+           <div>   <a class= "body" href="pcgaming.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500695_rd.jpg;maxWidth=220" alt=""/>
+              </a><a style="margin-left:25px;" href="pcgaming.html"> Pc gaming</a></div>             
+                 <div>   <a class= "body" href="tablet.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-623320-ghp-img-icons-tablets-309e6e1b-379c-438d-b57c-7e6450a91e6e.jpg;maxWidth=220" alt=""/>
+                </a> <a style="margin-left:40px;"  href="tablet.html"> tablets</a></div>                  
+                     <div>  <a class= "body" href="camera.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxWidth=220" alt=""/>
+                      </a><a style="margin-left:30px;" href="camera.html">cameras</a> </div>                 
+                           <div>  <a class= "body3" href="soundbar.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-toys-dbd5f58e-beb9-4ca2-8d48-3db5e29c5e63.jpg;maxWidth=220" alt=""/>
+                          </a><a style="margin-left:45px;" href="soundbar.html"> Toys</a>  </div>                       
+                           
+                           <div>  <a class= "body" href="watch.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6454/6454256_sd.jpg;maxWidth=220" alt=""/>
+                             </a> <a style="margin-left:35px;" href="watch.html">  Soundbars</a> </div>                                
+                                 <div>  <a class= "body1" href="smallapp.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510885_sd.jpg;maxWidth=220" alt=""/>
+                                 </a> <a style="margin-left:00px;" href="smallapp.html">  wearable technology</a>  </div>                                
+                                       <div>  <a class= "body" href="printer.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-smappls-bfa220bd-fca3-447c-ab2e-3c88aaebea36.jpg;maxWidth=220" alt=""/>
+                                     </a> <a style="margin-left:15px;" href="printer.html">  small appliances</a> </div>                                       
+                                         <div>   <a class= "body" href="phone.html"> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-615940-ghp-img-icons-printers-293d1aa1-6487-4489-8c17-f4bdc2f57b56.jpg;maxWidth=220" alt=""/>
+                                         </a> <a style="margin-left:40px;" href="phone.html">printers</a> </div>                                    
+                                         
+                                         <div> <a class= "body3" href="toys.html"> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461319_sd.jpg;maxWidth=220" alt=""/>
+                                           </a><a style="margin-left:40px;" href="toys.html">    phone</a>  </div>                               
+                                                                 <div>    <a class= "body" href="electri.html"> <img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502458_sd.jpg;maxWidth=220" alt=""/>
+                                                </a><a style="margin-left:15px;" href="electri.html">electric cycles</a>  </div>                                                 
+                                                     <div>    <a class= "body2" href="health.html"><img class="img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-611301-ghp-img-icons-health-1c7229b6-26c8-44a1-94ea-62315c8c6a4b.jpg;maxWidth=220" alt=""/>
+                                                     </a><a style="margin-left:15px;" href="health.html"> health equipment</a> </div> 
                                                       
   </div>
   <div id="products">
@@ -845,7 +869,7 @@ margin-top:230px;
 </p></footer>
 <!-- *loginpart -->
 <div id="inputfather">
-    <span id="heading">login Successful</span>
+    <span id="heading"></span>
     <div id="inputfatherchild1">
     <a id ="signin" href="login.html">sign in or create Account</a></div>
     <div id="signinunderline"></div>
@@ -883,6 +907,25 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+// holidaydeals partdropdown
+let mydropdown2=document.getElementById("myDropdown2");
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event2) {
+  if (!event2.target.matches('.holidaybtn')) {
+    var dropdowns2 = document.getElementsByClassName("dropdown-content");
+    var j;
+    for (j = 0; j < dropdowns2.length; j++) {
+      var openDropdown2 = dropdowns2[j];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
       }
     }
   }
@@ -967,6 +1010,7 @@ function displayproducts(data){
 let secifi=document.createElement("p");
 secifi.innerText=element.spe;
 
+
         addtocart.addEventListener("click",()=>{
             alert("product added to cart")
 cart.push(element);
@@ -984,9 +1028,9 @@ let btn=document.getElementById("inputbtn")
  let form=document.querySelector("form");
     let heading=document.getElementById("heading");
     var signin=JSON.parse(localStorage.getItem("userdetails"))
-    
+    heading.innerText="";
     signin.forEach((element,index)=>{
-heading.innerText="";
+       
       btn.addEventListener("click",(event)=>{
     event.preventDefault();
 
@@ -997,13 +1041,14 @@ let email=element.email;
 
  
  
-heading.innerHTML="";
+
 if(form.email.value==email)
-    {heading.innerText=("Sign in Successful")}
+    { heading.innerText=("Sign in Successfully")}
     else if( form.email.value==""){
-      heading.innerText="Please Enter email address"
+        heading.innerText=("Please Enter email address")
+      
     }
-else if(form.email.value!==email ){heading.innerText=("Email address not found")}
+else if(form.email.value!==email ){ heading.innerText=("Email address not found")}
     
   
   });

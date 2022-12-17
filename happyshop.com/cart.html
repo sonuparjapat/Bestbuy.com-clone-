@@ -324,11 +324,7 @@ flex-direction: column;
 justify-content: space-evenly;
 
 }
-#div2{
 
-  width:40%;
-  height:400px;
-}
 
  
 
@@ -360,23 +356,7 @@ margin-top:20px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   height:600px;
 }
-/* #container{
-  border:1px solid red;
-  width:20%;
-  height:100%;
-}
-#pickup{
-  border:1px solid red;
-  width:20%;
-  height:100%;
-}
-#buy{
-  border:1px solid red;
-  width:20%;
-  height:100%;
-} 
-*/
-/* cartpart */
+
 .feature{
   height:250px;
   width:70%;
@@ -401,6 +381,18 @@ margin-top:20px;
   height:30px;
   width:100px;
   background-color:rgb(55, 62, 163);
+}
+.deletebutton{
+  margin-left:20px;
+  margin-top:00px;
+  background-color: rgb(206, 70, 70);
+  height: 30px;
+  width:90px;
+}
+.deletebutton:hover{
+background-color:red;
+height:33px;
+width:92px;
 }
 .remove:hover{
   background-color:rgb(80, 59, 196);
@@ -428,7 +420,7 @@ margin-top:20px;
 
 #div2{
   margin-top:00px;
-  border:1px solid red;
+
   position:fixed;
   margin-left:800px;
   height:350px;
@@ -460,12 +452,7 @@ margin-left:1000px;
 }
 /* footerpart */
 #footerdiv{
-margin-top:30px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
-  color: black;
+position:sticky;
  
 
 
@@ -608,6 +595,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 #div1heading{
   margin-left:30px;
 }
+
     </style>
 </head>
 <body><div id="navdiv">
@@ -638,7 +626,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         </div>
         <div id="three">
             <div id="threeone">
-            <input type="text" placeholder="Search Best Buy"/></div>
+            <input id="searchinput" type="text" placeholder="Search Best Buy"/></div>
           <div id="threetwo"> <button id="searchbtn"><img src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"/></button></div>
        </div><div id="four">
     <div id="four1">
@@ -804,7 +792,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     </p></footer>
     <!-- *loginpart --> 
     <div id="inputfather">
-        <span id="heading">login Successful</span>
+        <span id="heading"></span>
         <div id="inputfatherchild1">
         <a id ="signin" href="login.html">sign in or create Account</a></div>
         <div id="signinunderline"></div>
@@ -876,8 +864,13 @@ window.onclick = function(event1) {
     let buy=document.getElementById("buy");
     let cartproducts=JSON.parse(localStorage.getItem("cartitem"))||[];
     let price1=document.getElementById("originalprice1");
+    let search=document.getElementById("searchbtn");
+let searchinput=document.getElementById("searchinput");
     displayproducts(cartproducts)
+
+  
 function displayproducts(data){
+  container.innerHTML=null;
    data.forEach((element,index)=>{
     
         let child=document.createElement("div");
@@ -910,6 +903,49 @@ secifi.innerText="specifications:-"+element.spe;
 let child1=document.createElement("div");
 child1.setAttribute("class","child1");
 let price1=document.getElementById("span");
+let delete1=document.createElement("button");
+delete1.innerText="Remove";
+
+
+delete1.setAttribute("class","deletebutton");
+// *searchpart
+search.addEventListener("click",()=>{
+
+
+
+delete1.addEventListener("click",()=>{
+data.splice(index,1);
+localStorage.setItem("cartitem",JSON.stringify(cartproducts))
+displayproducts(cartproducts)
+
+
+})
+// *searchpart
+
+
+search.addEventListener("click",()=>{
+let x=searchinput.value.toUpperCase();
+newdata=data.filter((el,index)=>{
+        if(el.name.toUpperCase().includes(x)){
+        return el.name.toUpperCase().includes(x);
+        
+      
+      } else{
+        return false
+      }   }
+      ); 
+      
+    
+     
+
+displayproducts(newdata) 
+})
+
+// onelineat867,868
+
+// displayproducts(newdata)
+
+})
 
 // productsum.push(sum)
 
@@ -944,22 +980,48 @@ cartproducts.push(element);
 localStorage.setItem("cartitem",JSON.stringify(cartproducts))
 displayproducts(cartproducts)
 
-// let price1=document.createElement("span");
-// price1.innerText="Original price------------------"+element.id*element.price
+
 })
 
 
 
-// for(let i=0;i<productsum.length;i++){
-//   price1.innerText=productsum[0]
-// }
 
     
-        child.append(featuredimg,name,secifi,rating,price,addbutton,quantity,remove)
+        child.append(featuredimg,name,secifi,rating,price,addbutton,quantity,remove,delete1)
     container.append(child);
-    // child1.append(price1,sum[0])
-    // div2.append(child1);
-   })
+  //  loginpart
+  let btn=document.getElementById("inputbtn")
+  let form=document.querySelector("form");
+    let heading=document.getElementById("heading");
+  var signin=JSON.parse(localStorage.getItem("userdetails"))
+  heading.innerText="";
+    signin.forEach((element,index)=>{
+       
+      btn.addEventListener("click",(event)=>{
+    event.preventDefault();
+
+
+
+let email=element.email;
+
+
+ 
+ 
+
+if(form.email.value==email)
+    { heading.innerText=("Sign in Successfully")}
+    else if( form.email.value==""){
+        heading.innerText=("Please Enter email address")
+      
+    }
+else if(form.email.value!==email ){ heading.innerText=("Email address not found")}
+    
+  
+  });
+})
+
+
+})
    let sum=0;
 
 for(let i=0;i<data.length;i++){
@@ -967,5 +1029,12 @@ for(let i=0;i<data.length;i++){
 }console.log(sum)
 price1.innerText="$"+sum
 bill.innerText=sum+729+73
+
+
+
+
+
+
+
 }
 </script>
