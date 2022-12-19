@@ -305,14 +305,14 @@ display: block;
 /* *scrollingpart */
 .scrolldiv{
     background: white;
-   width:100%;
+   width:25%;
  margin-left:35px;
 
 
 }
 .insidescrolldiv{
 
-    height:400px;
+    height:2500px;
     overflow: hidden;
     overflow-y: scroll;
  background:white;
@@ -328,11 +328,247 @@ display: block;
 .checkbox1{
     
 }
+/* footerpartworkingon thist height */
 #mainproductdiv{
     
-    border:1px solid red;
-  width:25%;
+  
+  width:100%;
+  display:flex;
+height:9500px;
+ justify-content: space-between;
+  
+
 }
+/* *bannerpart */
+#bannerpart{
+    background: linear-gradient(45deg,#101f61,#2b4cb6 40%,#4171fc 59%,#7fd8ff 85%,#a6e4ff);
+}
+#bannerbutton:hover{
+    background: linear-gradient(45deg,#101f61,#2b4cb6 40%,#4171fc 59%,#7fd8ff 85%,#a6e4ff);
+    width:150px;
+}
+#bannerbutton{
+
+    margin-left:40px;
+}
+
+/* top product part */
+#topproductdiv > div {
+width:20%;
+margin:auto;
+margin-top:50px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#topproductdiv button:hover{
+    background: linear-gradient(45deg,#101f61,#2b4cb6 40%,#4171fc 59%,#7fd8ff 85%,#a6e4ff);
+    
+}
+/* productpart */
+#cart{
+  flex-direction: column;
+  margin-left:500px;
+   margin-top:40px;
+    width:30%;
+     }
+#child{
+  width:100%;
+  display:flex;
+
+  margin-top:40px;
+}
+.childdiv1{
+    width:30%;
+  
+   
+ 
+}
+.save{
+    background-color:#0046be;
+    color:white;
+    height:30px;
+    border:00px;
+}
+.save:hover{
+    background-color: #101f61;
+
+}
+.childdiv2{
+    height:80%;
+    width:40%;
+  
+    margin-left:20px;
+ 
+}
+.childdiv3{
+   
+    height:80%;
+    margin-left:30px;
+    margin-top:20px;
+}
+.Add{
+    background-color:rgb(216, 124, 71);
+    border:00px;
+    color:white;
+    height:40px;
+}
+.Add:hover{
+    background-color: rgb(160, 160, 22);
+
+}
+.price{
+    font-size:30px;
+}
+
+ #container{
+ 
+     width:100%;
+display:grid;
+grid-template-columns: repeat(1,1fr);
+gap:20px;
+     margin-top:80px;
+    
+   
+     
+ }
+ /* lastwalaprodvut div */
+ #container1{
+   
+
+   display:grid;
+   grid-template-columns: repeat(5,1fr);
+   column-gap: 20px;
+   line-height: 20px;
+
+
+}
+ 
+
+ .rating{
+     width:20%;
+     height:40px;  
+ }
+ .feature{
+    width:100%;
+    height:180px;
+    margin-top:14px;
+   
+ }
+ .sku{
+    margin-left:20px;
+    font-size:12px;
+    margin-top:00px;
+    color:rgb(33, 85, 33);
+ }
+ .model{
+    margin-left:20px;
+    font-size:12px;
+    margin-top:00px;
+    color:rgb(29, 87, 29)
+ }
+ .modelskudiv{
+    display:flex;
+    margin-top:00px;
+   
+ }
+ .save{
+    width:100px;
+ }
+ /* footerpart */
+ #footerdiv{
+    display:flex;
+justify-content: space-around;
+background-color:#c1c6c9;
+height:450px;
+line-height: 10px;
+margin-top:30px;
+
+ }
+ footer{
+
+    height:300px;
+    margin-top:20px;
+  
+ }
+ #footer1  {
+    width:25%;
+    margin-top:20px;
+    
+   
+   
+ }
+ #inputfatherchild1{
+    margin-top:20px;
+    margin-left:10px;
+ }
+
+ 
+ 
+ #email{
+    margin-top:50px;
+    width:120%;
+    height:50px;
+ }
+ #inputfather a{
+    margin-top:0px;
+ }
+ #inputfather{
+  
+    margin-top:30px;
+    background-color: white;
+    height:350px;
+    width:30%;
+ }
+ #signinunderline{
+    border:1px solid gray;
+    margin-top:20px;
+ }
+ #inputfather button {
+   margin-left:50px;
+    margin-top:60px;
+    background-color:#0046be;
+    height:40px;
+  
+ }
+ #inputfather button:hover{
+    background-color: #101f61;
+ }
+ #about{
+    margin-top:80px;
+
+ }
+ #footerendline{
+    margin-top:80px;
+ }
+ #endline2{
+    margin-top:150px;
+    margin-left:150px;
+ }
+ #bestbuyend{
+    margin-left:30px;
+ }
+ #socialmedia{
+    margin-top:30px;
+    display:flex;
+    justify-content: space-evenly;
+  
+ }
+
+ 
+ #inputunderline{
+    border:1px solid gray;
+    margin-top:20px;
+ }
+ #inputflex{
+    display:flex;
+ }
+
+ /* }
+ *loginheading */
+ span{
+  
+    margin-top:30px;
+ }
+ /* lastproductwalidiv */
 
     </style>
 </head>
@@ -365,7 +601,7 @@ display: block;
             </div>
             <div id="three">
                 <div id="threeone">
-                <input type="text" placeholder="Search Best Buy"/></div>
+                <input type="text" id="searchinput" placeholder="Search Best Buy"/></div>
               <div id="threetwo"> <button id="searchbtn"><img src="https://static.vecteezy.com/system/resources/previews/002/272/237/original/search-icon-simple-free-illustration-free-vector.jpg"/></button></div>
            </div><div id="four">
         <div id="four1">
@@ -467,13 +703,13 @@ display: block;
  <select id="category" style="margin-left:35px;">
 <option value="">Select Category</option>
 <option value="Pc Laptops">Pc Laptops</option>
-<option value="Mackbook">Mackbook</option>
-<option value="Chrombooks">Chrombooks</option>
+<option value="Macbook">Mackbook</option>
+<option value="Chromebooks">Chrombooks</option>
 <option value="Microsoft Surface Go">Microsoft Surface Go</option>
  </select>
  <div style="border:1px solid rgb(226, 222, 222);margin-top:60px;"></div> 
 
- <form>
+ <form id="minmnaxform">
     <input id="priceinput" type="number" placeholder="min" style="width:90px;border-radius:7px;text-align:center;margin-left:35px;"/> <span>to</span>
     <input id="priceinput" type="number" placeholder="max" style="width:90px;border-radius:7px;text-align:center"/>
     </form>
@@ -481,6 +717,8 @@ display: block;
     <div style="margin-left:30px;"><input type="checkbox" id="price1"  name="vehicle1" value="Bike"/></div>
     <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">75$-99$</p></div>
 </div>
+
+
 <div style="display:flex;margin-top:00px;">
     <div style="margin-left:30px;"><input type="checkbox" id="price2"  name="vehicle1" value="Bike"/></div>
     <div style="margin-top:10px;margin-left:20px;"><p class="checkbox1">$100 - $149.99</p></div>
@@ -662,16 +900,153 @@ display: block;
 
 
 </div>
+</div>
    
-<div id=productdiv style="border:1px solid red;height:400px;margin-left:400px;">
+<div id=productdiv style="width:70%">
+    <div id ="bannerpart" style="border:1px solid white;width:100%;height:150px;line-height:18px;">
+    <div style="margin-top:30px;margin-left:20px;"><span style="font-size:50px;color:white;padding-top:1100px;">Great deals .
+    </span><span style="color:yellow;font-size:50px;">All in one place</span>
+    <p style="color:white;font-size:20px;">Find new deals all season long.</p><div><button id="bannerbutton" style="margin-left:10px;margin-top:00px;height:30px;border:blue;color:blue;"><a href="english.html">Shopmore Categories</a>
+    </button></div></div>
 
+    
+    <div style="margin-top:00px;"></div>
+    
+    <div id="topproductdiv" style="display:flex;">
+    <div>
+        <img style="width:100%;"src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6501269-MMT-545157-0523-f4752dee-6c11-484d-a6ae-dadbcae80c2d.jpg;maxHeight=302;maxWidth=504"/>
+        <a href="english.html">MacBook Save up to $400 on select models.</a>
+        <p>minimum saving is $50.</p>
+        <div style="margin-left:40px;"><button id="toplaptop1"><a href="cart.html">Shop Now</a></button></div>
+    </div>
+    <div>
+
+
+
+        
+        <img style="width:100%;"src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6450858-macbook-MMT-519474-0301-1cb17c96-9355-45cb-a68c-12c1cc221c15.jpg;maxHeight=302;maxWidth=504"/>
+        <a href="english.html">MacBook Save up to $400 on select models.</a>
+        <p>minimum saving is $50.</p>
+        <div style="margin-left:40px;"><button id="toplaptop1"><a href="cart.html">Shop Now</a></button></div>
+    </div>
+  
+    <div>
+        <img style="width:100%;"src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6504419-chromebook-MMT-625331-1205-c1deb6cc-5599-494e-ac15-67f2802a6964.jpg;maxHeight=302;maxWidth=504"/>
+        <a href="english.html">MacBook Save up to $400 on select models.</a>
+        <p>minimum saving is $50.</p>
+        <div style="margin-left:40px;"><button id="toplaptop1"><a href="cart.html">Shop Now</a></button></div>
+    </div>
+    <div>
+        <img style="width:100%;"src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_LG-Monitors-MMT-633782-1212-98d87ba5-ea51-491b-9d8b-7aadd030813c.jpg;maxHeight=302;maxWidth=504"/>
+        <a href="english.html">MacBook Save up to $400 on select models.</a>
+        <p>minimum saving is $50.</p>
+        <div style="margin-left:40px;"><button id="toplaptop1"><a href="cart.html">Shop Now</a></button></div>  
+    </div>
+    
+</div><P>Product offer subject to change,limite quantities no rainchecks</P>
+<div style="border:1px solid rgb(192, 188, 188);"></div>
+<div style="display:flex;">
+<div style="margin-top:20px;width:30%;margin-left:600px;">
+<span style="margin-left:00px;">Sort By:-</span></div><div style="width:20%;margin-right:170px;"><select id="sort" style="margin-top:20px;margin-left:00px;">
+   <option value="Featured">Featured</option>
+<option value="Low To High">Low To High</option>
+<option value="High To Low">High To Low</option>
+</select> </div></div>
+
+    <div id="container" style="margin-top:20px;"></div>
+    
+    </div>
+    
+
+</div></div>
+<h1>Try our other products</h1>
+<div id="container1">
+
+</div></div>
+<!-- footerpartworking on the basic of the height of mainproductdiv -->
+<div id="footerborder"></div>
+<div id="footerdiv">
+<footer id="footer1">
+    <p>Check Order Status</p>
+    <p><a href="accounts.html">account</a></p>
+    <p><a href="shipping.html">Shipping,Delivery & pickup</a></p>
+    <p><a href="return.html">return & Exchange</a></p>
+    <p><a href="pricematch.html">Pricemath Gurantee</a></p>
+    <p><a href="productcall.html">Product-recall</a></p>
+    <p><a href="Tradeinp.html">Trade in programme</a></p>
+    <p><a href="giftcards.html">Gift Cards</a></p>
+    <p>Payment Options</p>
+    <p><a href="mybestcredt.html">My Best Buy® Credit Card</a></p>
+    <p><a href="citibank.html">Pay Your Bill at Citibank</a></p>
+    <p><a href="leases.html">Lease to Own</a></p>
+    <p id="footerendline">How was your experience? <a href="feedback.html">Give feedback about our website</a></p>
+</footer>
+
+<footer>
+    <p>support & services</p>
+    <p><a href="visit.html">Visit our Support Center</a></p>
+    <p><a href="shopwithan.html">Shop with an Expert</a></p>
+    <p><a href="sheduleaser.html">Schedule a Service</a></p>
+    <p><a href="manage.html">Manage an Appointment</a></p>
+    <p><a href="protection.html">Protection & Support Plans</a></p>
+    <p><a href="recycling.html">Haul Away & Recycling</a></p>
+    <p><a href="contactus.html">Contact Us</a></p> 
+    <p>Rewards & Membership</p>
+    <p><a href="bestbuytotaltech.html">Best Buy Totaltech</a></p>
+    <p><a href="mybest.html">My Best Buy</a></p>
+    <p><a href="viewpoin&cer.html">View Points & Certificates</a></p>
+    <p><a href="memberoffr.html">Member Offers</a></p>
+</footer>
+<footer>
+    <p>Affilate Programmes</p>
+    <p><a href="Affilateprogra.html">Affiliate Program</a></p>
+    <p><a href="Advertise.html">Advertise with Us</a></p>
+    <p><a href="devlopers.html">Developers</a></p>
+    <p><a href="bestbuyhelth.html">Best Buy Health</a></p>
+    <p><a href="bestbuybussiness.html">Best Buy Business</a></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  <p id="about">about HappyShop</p>
+  <p><a href="corporate.html">Corporate Information</a></p>
+  <p><a href="carrer.html">Careers</a></p>
+  <p><a href="discoverlearn.html">Discover & Learn</a></p>
+
+</p></footer>
+<!-- *loginpart -->
+<div id="inputfather">
+    <span id="heading"></span>
+    <div id="inputfatherchild1">
+    <a id ="signin" href="login.html">sign in or create Account</a></div>
+    <div id="signinunderline"></div>
+    <div id="inputflex">
+      
+    <div id="inputfatherchild2">  <form id="footerform"><input id="email" type="email" placeholder="Enter Email Address"/></div></form>
+   <div> <button id="inputbtn">
+        Signup
+    </button></form></div></div>
+    <div id="inputunderline"></div>
+  
+    <div id="socialmedia">
+        <div><a href="insta.html"><i class="fa-brands fa-instagram"></i></div>
+        <div><a href="insta.html"><i class="fa-brands fa-youtube"></i></a></div>
+        <div><a href="insta.html"><i class="fa-brands fa-facebook"></i></a></div>
+        <div><a href="insta.html"><i class="fa-brands fa-twitter"></i></a></div>
+    </div>
+    <p id="endline2"><a href="endline2.html">Mobile site</a>          <a id="bestbuyend" href="Bestbuy.html">Happyshop Canada</a>
+</div>
 </div>
 
-        </div>
+
+        
         
 </body>
 </html>
 <script>
+
+
+
      function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -728,4 +1103,745 @@ window.onclick = function(event1) {
     }
   }
 }
+
+// product part
+let obj=[{
+    name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    id:1,
+    quantity:1,
+    Model: "81X800MCU",
+    SKU: "651195",
+    color:"Silver",
+    Category:"Pc Laptop",
+    Brand:"Microsoft",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Celeron",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511950_sd.jpg;maxHeight=200;maxWidth=300"
+
+},
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    id:2,
+    quantity:1,
+     Model: "81X800MCUSg",
+    SKU: "651195065",
+    color:"Gray",
+    Category:"Touch Screen",
+    Brand:"Microsoft Surface Go",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Core i7",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502181_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:3,
+quantity:1,
+color:"Green",
+    Category:"Chromebooks",
+    Brand:"Hp",
+    Model: "81X800MCUhf",
+    SKU: "65119503464",
+    Feature:"Backlit-keyboard",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500335_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:4,
+quantity:1,
+color:"Blue",
+    Category:"Pc Laptops",
+    Brand:"Asus",
+    Feature:"Headphone Jack",
+    Model: "81X800MCUSdg",
+    SKU: "6511950446",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494644_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    id:5,
+    quantity:1,
+    Model: "81X800MCf",
+    SKU: "651195sdd0",
+    color:"Black",
+    Category:"Macbook",
+    Brand:"Apple",
+    Feature:"Touch Screen",
+    Processor:"Intel Core i3",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509650_sd.jpg;maxHeight=200;maxWidth=300"},
+   {name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    id:6,
+    quantity:1,
+    Model: "81X800MsfsCUS",
+    SKU: "65145471950",
+    color:"Silver",
+    Category:"Pc Laptop",
+    Brand:"Microsoft",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Celeron",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509650_sd.jpg;maxHeight=200;maxWidth=300"},
+
+
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    id:7,
+    Model: "8dgd1X800MCUS",
+    SKU: "6514561950",
+    quantity:1,
+    color:"Gray",
+    Category:"Touch Screen",
+    Brand:"Microsoft Surface Go",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Core i7",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6520/6520385_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:8,
+quantity:1,
+color:"Green",
+Model: "81X80DGD0MCUS",
+    SKU: "6511647950",
+    Category:"Chromebooks",
+    Brand:"Hp",
+    Feature:"Backlit-keyboard",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498805_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+color:"Blue",
+Model: "81X8046540MCUS",
+    SKU: "65114646950",
+    Category:"Pc Laptops",
+    Brand:"Asus",
+    Feature:"Headphone Jack",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:9,
+quantity:1,
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501274_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    color:"Black",
+    Model: "81X8004646MCUS",
+    SKU: "651195464650",
+    Category:"Macbook",
+    Brand:"Apple",
+    Feature:"Touch Screen",
+    Processor:"Intel Core i3",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:10,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6504/6504419_sd.jpg;maxHeight=200;maxWidth=300"
+},
+{
+    name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    color:"Silver",
+    Category:"Pc laptop",
+    Brand:"Microsoft",
+    Model: "81X4646800MCUS",
+    SKU: "65514641950",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Celeron",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:11,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425303_sd.jpg;maxHeight=200;maxWidth=300"
+
+},
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    quantity:1,
+    color:"Gray",
+    Model: "81X8464600MCUS",
+    SKU: "651164646950",
+    Category:"Touch Screen",
+    Brand:"Microsoft Surface Go",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Core i7",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:12,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6520/6520385_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:13,
+Model: "81X800464646MCUS",
+    SKU: "651164646950",
+quantity:1,
+color:"Green",
+    Category:"Chromebooks",
+    Brand:"Hp",
+    Feature:"Backlit-keyboard",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498805_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+quantity:1,
+Model: "4681X800MCUS",
+    SKU: "654611950",
+color:"Blue",
+    Category:"Pc Laptops",
+    Brand:"Asus",
+    Feature:"Headphone Jack",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:14,
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501274_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    quantity:1,
+    color:"Black",
+    Category:"Macbook",
+    Brand:"Apple",
+    Model: "81464X800MCUS",
+    SKU: "65114950",
+    Feature:"Touch Screen",
+    Processor:"Intel Core i3",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:15,
+  
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6504/6504419_sd.jpg;maxHeight=200;maxWidth=300"},
+   {name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    id:16,
+    quantity:1,
+    Model: "864461X800MCUS",
+    SKU: "651146950",
+    color:"Silver",
+    Category:"Pc Laptop",
+    Brand:"Microsoft",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Celeron",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5721/5721600_sd.jpg;maxHeight=200;maxWidth=300"},
+
+
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    id:17,
+    quantity:1,
+    color:"Gray",
+    Model: "81X86600MCUS",
+    SKU: "65119443350",
+    Category:"Touch Screen",
+    Brand:"Microsoft Surface Go",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Core i7",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6200/6200723_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:18,
+Model: "81X0MCUS",
+    SKU: "65950",
+quantity:1,
+color:"Green",
+    Category:"Chromebooks",
+    Brand:"Hp",
+    Feature:"Backlit-keyboard",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455189_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:19,
+quantity:1,
+color:"Blue",
+Model: "81X35800MCUS",
+    SKU: "651GD1950",
+    Category:"Pc Laptops",
+    Brand:"Asus",
+    Feature:"Headphone Jack",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6200/6200723_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    color:"Black",
+    Category:"Macbook",
+    Brand:"Apple",
+    Feature:"Touch Screen",
+    Processor:"Intel Core i3",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:20,
+    quantity:1,
+    Model: "810MCUS",
+    SKU: "651FG950",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5721/5721940_sd.jpg;maxHeight=200;maxWidth=300"
+},
+{name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    id:21,
+    quantity:1,
+    color:"Silver",
+    Model: "81MCUS",
+    SKU: "6SF50",
+    Category:"Pc laptop",
+    Brand:"Microsoft",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Celeron",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5721/5721600_sd.jpg;maxHeight=200;maxWidth=300"},
+
+
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    color:"Gray",
+    Model: "81XDGFDUS",
+    SKU: "651DG0",
+    Category:"Touch Screen",
+    Brand:"Microsoft Surface Go",
+    Feature:"Front Facing Camera",
+    Processor:"Intel Core i7",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:22,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6200/6200723_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:23,
+quantity:1,
+color:"Green",
+    Category:"Chromebooks",
+    Brand:"Hp",
+    Model: "8FSFSUS",
+    SKU: "6545750",
+    Feature:"Backlit-keyboard",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455189_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:24, 
+quantity:1,
+Model: "SFSFS",
+    SKU: "6SFSF0",
+color:"Blue",
+    Category:"Pc Laptops",
+    Brand:"Asus",
+    Feature:"Headphone Jack",
+    Processor:"Intel Core i5",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6200/6200723_sd.jpg;maxHeight=200;maxWidth=300"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    color:"Black",
+    Category:"Macbook",
+    Brand:"Apple",
+    Feature:"Touch Screen",
+    Processor:"Intel Core i3",
+    Pickup:"Ready in 1 hour",
+    Shipping:"unavaliable in your area",
+    avail:"This item is only avaliable only in certain market",
+    id:25,
+    quantity:1,
+    Model: "8FSRFFMCUS",
+    SKU: "651SFSF950",
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5721/5721940_sd.jpg;maxHeight=200;maxWidth=300"
+}
+
+
+
+
+
+
+
+];
+
+
+
+
+let obj1=[{
+    name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:429,
+    id:1,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+        image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511943_sd.jpg;maxHeight=640;maxWidth=550"
+
+},
+{ name:"Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:489,
+    id:2,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511315_sd.jpg;maxHeight=640;maxWidth=550"},
+{ name:"HP - 14 Laptop - AMD Ryzen 3 3250U - 8GB Memory - 128GB SSD - Natural Silver",
+price:679,
+id:3,
+quantity:1,
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502175_sd.jpg;maxHeight=640;maxWidth=550"},
+{ name:"HP - 15.6 Touch-Screen Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+price:309,
+spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+id:4,
+quantity:1,
+star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510528_sd.jpg;maxHeight=640;maxWidth=550"},
+{ name:"Dell - Inspiron 15.6 Laptop - AMD Ryzen 5 - 8GB Memory - 256GB Solid State Drive - Carbon Black",
+    star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
+    price:500,
+    id:5,
+    quantity:1,
+    spe:"Processor: AMD Ryzen 3 3250U | Speed: 2.6 GHz (Base) - 3.5 GHz (Max) | 2 Cores | 4 Threads | 1MB L2 / 4MB L3;OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6508/6508652_sd.jpg;maxHeight=640;maxWidth=550"}
+];
+
+
+
+let featured=document.getElementById("container");
+let cart=JSON.parse(localStorage.getItem("cartitem"))||[];
+// filterbycategorypart
+let categoryfilter=document.getElementById("category");
+categoryfilter.addEventListener("change",()=>{
+    let newdata=obj.filter((element,index)=>{
+if(categoryfilter.value==element.Category){
+    return true
+}else if(categoryfilter.value==""){
+    return obj
+}else {return false}
+    })
+    displayproducts(newdata)
+})
+//  sortpart*
+let sort=document.getElementById("sort");
+sort.addEventListener("change",()=>{
+    let newdata;
+    if(sort.value=="Low To High"){
+        newdata=obj.sort((a, b) => a.price - b.price);
+  displayproducts(newdata) }
+  else if(sort.value=="High To Low"){
+    newdata=obj.sort((a,b)=>
+    b.price-a.price)
+    displayproducts(newdata) }
+ 
+else {return false;}
+   displayproducts(obj)
+}
+)
+
+
+// recentyly getting part form localStorage half part at 1688;
+
+// recentylyviewed part
+// one line on up (getting part)at 1636
+// featuredimg.addEventListener("click",()=>{
+//     obj.forEach((element,index)=>{
+//         recently.push(element);
+//         localStorage.setItem("recentlyviewed",JSON.stringify(recently))
+       
+//     })})
+
+// let  recently=JSON.parse(localStorage.getItem("recentlyviewed"))||[];
+// saveitemlocalstorage
+let saveitem=JSON.parse(localStorage.getItem("saveitem"))||[];
+displayproducts(obj)
+function displayproducts(data){
+featured.innerHTML=null;
+  data.forEach((element,index)=>{
+      
+        let child=document.createElement("div");
+        child.setAttribute("id","child")
+        let childdiv1=document.createElement("div");
+        childdiv1.setAttribute("class","childdiv1");
+        let childdiv2=document.createElement("div");
+        childdiv2.setAttribute("class","childdiv2");
+        let modelskudiv=document.createElement("div");
+modelskudiv.setAttribute("class","modelskudiv");
+        let model=document.createElement("p");
+        model.setAttribute("class","model");
+        model.innerText="Model:-"+element.Model
+        let sku=document.createElement("p");
+        sku.setAttribute("class","sku")
+        sku.innerText="SKU:-"+element.SKU;
+        let pickup=document.createElement("p");
+        pickup.innerText="Pickup:-"+element.Pickup;
+        let shipping=document.createElement("p")
+        shipping.innerText="shipping:-"+element.Shipping;
+let details=document.createElement("p");
+details.innerText=element.avail;
+        let childdiv3=document.createElement("div");
+        childdiv3.setAttribute("class","childdiv3");
+        let featuredimg=document.createElement("img");
+        featuredimg.setAttribute("src",element.image);
+        featuredimg.setAttribute("class","feature")
+        let name=document.createElement("p");
+        name.innerText=element.name;
+        let rating=document.createElement("img");
+        rating.setAttribute("src",element.star);
+      rating.setAttribute("class","rating")
+        let price=document.createElement("p");
+        price.setAttribute("class","price")
+        price.innerText="$"+element.price
+        let addtocart=document.createElement("button");
+        addtocart.setAttribute("class","Add")
+        addtocart.innerText="Add To Cart"
+let secifi=document.createElement("p");
+secifi.innerText=element.spe;
+let save=document.createElement("button");
+save.innerText="Save";
+save.setAttribute("class","save");
+save.addEventListener("click",()=>{
+    saveitem.push(element);
+    localStorage.setItem("saveitem",JSON.stringify(saveitem))
+    alert("product added to your save items")
+})
+
+
+
+
+
+
+
+addtocart.addEventListener("click",()=>{
+
+let ispresent=false;
+
+for(let i=0;i<cart.length;i++){
+  if(cart[i].id==element.id){
+  ispresent=true
+  break;
+}}
+if(ispresent==true){
+alert("Product already in cart")
+
+}
+else{ cart.push(element)
+localStorage.setItem("cartitem",JSON.stringify(cart))
+alert("Product added to cart")
+
+}
+})
+        modelskudiv.append(model,sku)
+     childdiv1.append(featuredimg);
+     childdiv2.append(name,  modelskudiv,rating,pickup,shipping,details,save);
+     childdiv3.append(price,addtocart)
+        child.append(childdiv1,childdiv2,childdiv3)
+      
+        featured.append(child);
+
+    })
+}
+//  loginpart
+
+let btn=document.getElementById("inputbtn")
+ let form=document.getElementById("footerform");
+    let heading=document.getElementById("heading");
+    var signin=JSON.parse(localStorage.getItem("userdetails"))
+    heading.innerText="";
+    signin.forEach((element,index)=>{
+       
+      btn.addEventListener("click",(event)=>{
+    event.preventDefault();
+
+
+
+let email=element.email;
+
+
+ 
+ 
+
+if(form.email.value==email)
+    { heading.innerText=("Sign in Successfully")}
+    else if( form.email.value==""){
+        heading.innerText=("Please Enter email address")
+      
+    }
+else if(form.email.value!==email ){ heading.innerText=("Email address not found")}
+    
+  
+  });
+    
+    })
+    ;
+// recentlyviewed itemspart
+
+
+
+
+    let featured1=document.getElementById("container1");
+    let search=document.getElementById("searchbtn");
+let searchinput=document.getElementById("searchinput");
+
+displayproducts1(obj1)
+function displayproducts1(data){
+featured1.innerHTML=null;
+  data.forEach((element,index)=>{
+      
+       
+    let child=document.createElement("div");
+        let featuredimg=document.createElement("img");
+        featuredimg.setAttribute("src",element.image);
+        featuredimg.setAttribute("class","feature")
+        let name=document.createElement("p");
+        name.innerText=element.name;
+        let rating=document.createElement("img");
+        rating.setAttribute("src",element.star);
+      rating.setAttribute("class","rating")
+        let price=document.createElement("p");
+        price.setAttribute("class",price)
+        price.innerText="$"+element.price
+        let addtocart=document.createElement("button");
+        addtocart.setAttribute("class","Add")
+        addtocart.innerText="Add To Cart"
+let secifi=document.createElement("p");
+secifi.innerText=element.spe;
+// searchfunctioality
+search.addEventListener("click",()=>{
+let x=searchinput.value.toUpperCase();
+newdata=data.filter((el,index)=>{
+        if(el.name.toUpperCase().includes(x)){
+        return el.name.toUpperCase().includes(x);
+        
+      
+      } else{
+        return false
+      }   });
+
+       displayproducts(newdata)
+     
+      
+    })
+// addtocartfunctionality
+addtocart.addEventListener("click",()=>{
+
+let ispresent=false;
+
+for(let i=0;i<cart.length;i++){
+  if(cart[i].id==element.id){
+  ispresent=true
+  break;
+}}
+if(ispresent==true){
+alert("Product already in cart")
+
+}
+else{ cart.push(element)
+localStorage.setItem("cartitem",JSON.stringify(cart))
+alert("Product added to cart")
+
+}
+})
+        child.append(featuredimg,name,rating,price,addtocart)
+        featured1.append(child);
+
+    })
+}
+
+    ;
+
+
+    
 </script>
