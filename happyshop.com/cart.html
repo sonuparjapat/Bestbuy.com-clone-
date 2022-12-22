@@ -595,7 +595,13 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 #div1heading{
   margin-left:30px;
 }
-
+.paymentinput{
+  margin-top:220px;
+  width:100px;
+  height: 20px;;
+  margin-left:150px;
+  color:green;
+}
     </style>
 </head>
 <body>  <div id="navdiv">
@@ -922,6 +928,42 @@ window.onclick = function(event1) {
   }
 }
 
+
+// paymentpart
+
+
+//   let otp="12345";
+//   function reload(){
+    let div2=document.getElementById("div2")
+let checkout=document.getElementById("yellow");
+checkout.addEventListener("click",()=>{
+  alert("You ordered successfully")
+// let input=document.createElement("input");
+// input.placeholder="Please Enter Otp"
+
+// input.setAttribute("class","paymentinput")
+
+// div2.append(input)
+})
+//   let promise= new Promise((resolve, reject) => {
+//     setTimeout(function(){
+//       let inputcheck=document.getElementsByClassName("paymentinput");
+// if(otp==inputcheck){
+//   resolve("payment succefull")}
+//     else{reject("otp is not valid")}
+  
+//   },5000)
+// })
+
+//     promise.then((resolve)=>{
+// console.log(alert(resolve))
+// reload();
+//     })
+// .catch((reject)=>{
+//   console.log(alert(reject))
+//   reload();
+// })
+// }reload()
 // cartwork
 // let productsum=JSON.parse(localStorage.getItem("sum1"))||[];
 let sumdiv=document.getElementById("sumdiv")
@@ -1034,9 +1076,10 @@ addbutton.addEventListener("click",()=>{
   console.log(data)
 
   element.quantity++
+ 
   quantity.innerText=element.quantity;
   localStorage.setItem("cartitem",JSON.stringify(cartproducts))
-
+ 
 
 })
 
@@ -1044,9 +1087,11 @@ remove.addEventListener("click",()=>{
   if(element.quantity<=1){
   
   quantity.innerText=element.quantity;
+  
   }
   else{(element.quantity--)
     quantity.innerText=element.quantity
+   
   }
 console.log(data)
 localStorage.setItem("cartitem",JSON.stringify(cartproducts))
@@ -1102,7 +1147,7 @@ for(let i=0;i<data.length;i++){
 }console.log(sum)
 price1.innerText="$"+sum
 bill.innerText=sum+729+73
-
+displayproducts(cartproducts)
 
 })
 
