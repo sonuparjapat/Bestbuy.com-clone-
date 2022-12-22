@@ -570,7 +570,12 @@ line-height: 10px;
     margin-top:30px;
  }
  /* lastproductwalidiv */
-
+/* minmaxsubmitbutton */
+#submit{
+    width:20px;
+    height:20px;
+ 
+}
     </style>
 </head>
 <body>
@@ -710,9 +715,10 @@ line-height: 10px;
  </select>
  <div style="border:1px solid rgb(226, 222, 222);margin-top:60px;"></div> 
 
- <form id="minmnaxform">
+ <form id="minmaxform">
     <input id="priceinput" type="number" placeholder="min" style="width:90px;border-radius:7px;text-align:center;margin-left:35px;"/> <span>to</span>
-    <input id="priceinput" type="number" placeholder="max" style="width:90px;border-radius:7px;text-align:center"/>
+    <input id="priceoutput" type="number" placeholder="max" style="width:90px;border-radius:7px;text-align:center"/>
+    <button id="submit" value="submit"></button>
     </form>
     <div style="display:flex;margin-top:00px;">
     <div style="margin-left:30px;"><input type="checkbox" id="price1"  name="vehicle1" value="Bike"/></div>
@@ -1587,6 +1593,7 @@ star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-es
 
 
 
+
 let obj1=[{
     name:"Lenovo - Ideapad 1 15.6 HD Laptop Athlon Silver 3050U - 4GB Memory - 128GB eMMC - Cloud Grey",
     star:"https://www.nicepng.com/png/detail/292-2924229_le-di-a-la-rosa-blanca-4-estrellitas.png",
@@ -1674,7 +1681,30 @@ else {return false;}
 
 // let  recently=JSON.parse(localStorage.getItem("recentlyviewed"))||[];
 // saveitemlocalstorage
+
+// minmaxcatchingid
+let minmaxform=document.getElementById("minmaxform")
+let submit=document.getElementById("submit")
+// minmaxpart
+submit.addEventListener("click",(event)=>{
+event.preventDefault();
+let newdata=obj.filter((element,index)=>{
+if(element.price<=minmaxform.priceoutput.value && element.price>=minmaxform.priceinput.value){
+return true
+}
+else {false}})
+displayproducts(newdata)
+
+})
+
+
+
+
+
 let saveitem=JSON.parse(localStorage.getItem("saveitem"))||[];
+// searchpartcatchigid
+let search=document.getElementById("searchbtn");
+let searchinput=document.getElementById("searchinput");
 displayproducts(obj)
 function displayproducts(data){
 featured.innerHTML=null;
@@ -1731,8 +1761,6 @@ save.addEventListener("click",()=>{
 
 
 
-
-
 addtocart.addEventListener("click",()=>{
 
 let ispresent=false;
@@ -1752,6 +1780,23 @@ alert("Product added to cart")
 
 }
 })
+// searchfunctionality
+// searchfunctioality
+search.addEventListener("click",()=>{
+let x=searchinput.value.toUpperCase();
+newdata=data.filter((el,index)=>{
+        if(el.name.toUpperCase().includes(x)){
+        return el.name.toUpperCase().includes(x);
+        
+      
+      } else{
+        return false
+      }   });
+
+       displayproducts(newdata)
+     
+      
+    })
         modelskudiv.append(model,sku)
      childdiv1.append(featuredimg);
      childdiv2.append(name,  modelskudiv,rating,pickup,shipping,details,save);
@@ -1801,8 +1846,7 @@ else if(form.email.value!==email ){ heading.innerText=("Email address not found"
 
 
     let featured1=document.getElementById("container1");
-    let search=document.getElementById("searchbtn");
-let searchinput=document.getElementById("searchinput");
+
 
 displayproducts1(obj1)
 function displayproducts1(data){
@@ -1827,22 +1871,7 @@ featured1.innerHTML=null;
         addtocart.innerText="Add To Cart"
 let secifi=document.createElement("p");
 secifi.innerText=element.spe;
-// searchfunctioality
-search.addEventListener("click",()=>{
-let x=searchinput.value.toUpperCase();
-newdata=data.filter((el,index)=>{
-        if(el.name.toUpperCase().includes(x)){
-        return el.name.toUpperCase().includes(x);
-        
-      
-      } else{
-        return false
-      }   });
 
-       displayproducts(newdata)
-     
-      
-    })
 // addtocartfunctionality
 addtocart.addEventListener("click",()=>{
 
