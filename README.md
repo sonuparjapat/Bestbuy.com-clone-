@@ -1,4 +1,4 @@
-#This project is clone of a website having name bestbuy.com,which is ecommerce website from where a user can buy product according to their wish
+<p>Best Buy's website, bestbuy.com, is a popular online shopping destination for electronics products. The website offers a user-friendly interface, with easy navigation and search functions to help customers find the products they need. Best Buy's website also offers a range of features such as product reviews, product comparisons, and price tracking</p>
 <div><h1>Features:-</h1>
 <ol>
   <li>Homepage</li>
